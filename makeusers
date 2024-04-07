@@ -1,0 +1,14 @@
+#!/bin/bash
+
+file=$1
+combinations=""
+
+while read line; do
+    name=$(echo $line | tr '[:upper:]' '[:lower:]' | awk '{print $1}')
+    second=$(echo $line | tr '[:upper:]' '[:lower:]' | awk 'NF{print $NF}')
+    n=$(echo $name | cut -c1)
+    s=$(echo $second | cut -c1)
+    combinations="$combinations$name$second\n$name.$second\n$n$second\n$n.$second\n$name$s\n$name.$s\n$second$name\n$second.$name\n$s$name\n$s.$name\n$second$n\n$second.$n\n"
+done < $file
+
+echo -e $combinations
