@@ -1,5 +1,5 @@
 # makeusers
-Create username pattern based on Name and SecondName
+Create username pattern based on Name and Second name
 
 ## Usage
 
