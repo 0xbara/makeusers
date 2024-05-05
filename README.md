@@ -4,18 +4,18 @@ Create username pattern based on Name and SecondName
 ## Usage
 
 ```bash
-wget https://raw.githubusercontent.com/0xbara/makeusers/main/makeusers -O makeusers
-chmod +x makeusers
+❯ wget https://raw.githubusercontent.com/0xbara/makeusers/main/makeusers -O makeusers
+❯ chmod +x makeusers
 
-cat names.txt
+❯ cat names.txt
 
 Ruy Alonso
 Maya Bendito
 Gregory Smith
 
-./makeusers names.txt > usernames.txt
+❯ ./makeusers names.txt > usernames.txt
 
-cat usernames.txt
+❯ cat usernames.txt
 
 ruyalonso
 ruy.alonso
