@@ -54,4 +54,3 @@ s.gregory
 smithg
 smith.g
 ```
-## Poc
